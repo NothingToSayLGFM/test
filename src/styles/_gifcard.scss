@@ -1,0 +1,31 @@
+.card {
+  width: 312px;
+  height: 368px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 16px;
+  margin-top: 24px;
+  .event-button {
+    width: 40px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 2px;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+  }
+  &:hover {
+    .event-button {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}
